@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "../components/ui/button";
 import {
   Card,
@@ -12,7 +13,9 @@ interface LandingPageProps {}
 
 export const LandingPage: React.FC<LandingPageProps> = ({}) => {
   return (
-    <section className={`my-20 w-[100vw] flex gap-10 justify-center`}>
+    <section
+      className={`my-20 w-[calc(100vw - 20px)] flex gap-10 justify-center`}
+    >
       <Card className={`w-[300px]`}>
         <CardHeader className={`text-center`}>
           <CardTitle className={`text-2xl font-extrabold mb-3 leading-9`}>
@@ -24,9 +27,12 @@ export const LandingPage: React.FC<LandingPageProps> = ({}) => {
         </CardHeader>
         <CardContent className={`flex flex-col gap-4 mt-6`}>
           <Button variant="outline">Login</Button>
-          <Button>Signup</Button>
+          <Button asChild>
+            <Link href={"/client/signup"}>Signup</Link>
+          </Button>
         </CardContent>
       </Card>
+
       <Card className={`w-[300px]`}>
         <CardHeader className={`text-center`}>
           <CardTitle className={`text-2xl font-extrabold mb-3 leading-9`}>

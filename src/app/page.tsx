@@ -4,7 +4,7 @@ import { LandingPage } from "../module/landing-page";
 export default function Home() {
   return (
     <>
-      <Header />
+      <Header type="landing" />
       <LandingPage />
     </>
   );
