@@ -30,7 +30,7 @@ export default function ClientSignUp() {
       className={`my-20 w-[calc(100vw - 20px)] flex gap-10 justify-center`}
     >
       {!loggedIn ? (
-        <Card className={`w-[300px]`}>
+        <Card className={`w-[350px]`}>
           <CardHeader className={`text-center`}>
             <CardTitle className={`text-2xl font-extrabold mb-3 leading-9`}>
               Create new account
@@ -58,7 +58,7 @@ export default function ClientSignUp() {
           </CardContent>
         </Card>
       ) : (
-        <Card className={`w-[450px]`}>
+        <Card className={`w-[400px]`}>
           <CardHeader className={`text-center`}>
             <CardTitle className={`text-2xl font-extrabold mb-3 leading-9`}>
               Profile Details
@@ -70,7 +70,7 @@ export default function ClientSignUp() {
           <CardContent className={`flex flex-col gap-6 mt-6`}>
             <div>
               <Avatar className={`w-32 h-32 m-auto`}>
-                <AvatarImage src="/assets/girl.jpg" />
+                <AvatarImage src="/assets/girl2.jpg" />
                 <AvatarFallback>TP</AvatarFallback>
               </Avatar>
             </div>

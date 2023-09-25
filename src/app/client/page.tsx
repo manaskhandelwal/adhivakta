@@ -13,7 +13,7 @@ export default function Home() {
     <section
       className={`my-20 w-[calc(100vw - 20px)] flex gap-10 justify-center`}
     >
-      <Card className={`w-[300px]`}>
+      <Card className={`w-[350px]`}>
         <CardHeader className={`text-center`}>
           <CardTitle className={`text-2xl font-extrabold mb-3 leading-9`}>
             Consult a lawyer

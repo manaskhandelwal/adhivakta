@@ -6,7 +6,8 @@ export const DATA = {
       address:
         " Plot Nos 8, 11, TechZone 2, Greater Noida, Uttar Pradesh 201310",
       description:
-        "Bennett University, is a private university, located in Greater Noida, India, established by the Act of State Legislature of Uttar Pradesh as a private university and is empowered to award degrees as specified under section 22 of the UGC Act to the students studying in its main campus in regular mode with the approval of Statutory Bodies/Councils, wherever required",
+        "Bennett University, is a private university, located in Greater Noida, India, established by the Act of State Legislature of Uttar Pradesh as a private university and is empowered to award degrees as specified under section 22 of the UGC Act to the students studying in its main campus in regular mode with the approval of Statutory Bodies/Councils, wherever required.",
+      img: "https://www.bennett.edu.in/wp-content/uploads/2023/01/logo-1.webp",
     },
     {
       id: 2,
@@ -14,15 +15,17 @@ export const DATA = {
       address:
         "Banaras Hindu University Campus, Varanasi, Uttar Pradesh 221005",
       description:
-        "Faculty of Law, Banaras Hindu University also known as the Law School, BHU is a faculty in the Banaras Hindu University, Varanasi, India which offers undergraduate, postgraduate and doctorate courses in legal education. It was founded in 1924",
+        "Faculty of Law, Banaras Hindu University also known as the Law School, BHU is a faculty in the Banaras Hindu University, Varanasi, India which offers undergraduate, postgraduate and doctorate courses in legal education. It was founded in 1924.",
+      img: "https://www.bhu.ac.in/Scripts/SitesBhu/images/logo.png",
     },
     {
       id: 3,
-      name: " National Law School of India University, Bangalore",
+      name: "National Law School of India University",
       address:
         "Gnana Bharathi Main Rd, opp. NAAC, Teachers Colony, Naagarabhaavi, Bengaluru, Karnataka 560072",
       description:
         "National Law School of India University, or simply National Law School, is a public law school and a National Law University located in Bangalore. Considered the best law school in India, it has topped all indices relating to law schools. Laid foundation by then Chief Justice Y. V.",
+      img: "https://www.nls.ac.in/wp-content/uploads/2020/09/NLSIU-logo.png",
     },
     {
       id: 4,
@@ -31,6 +34,7 @@ export const DATA = {
         "5M36+F8P, Attalika Avenue Knowledge Corridor, PDPU Rd, Koba, Gujarat 382421",
       description:
         "The Gujarat National Law University is a pre-eminent public law school and a National Law University established under the Gujarat National Law University Act, 2003 in the state of Gujarat",
+      img: "https://gnlu.ac.in//Content/gnlu/images/logo.png",
     },
   ],
   awards: [
@@ -38,19 +42,19 @@ export const DATA = {
       id: 1,
       name: "Pro bono Initiative of the year",
       description:
-        "The award recognizes initiatives taken by law firms to make a positive difference in the lives of others and contribute to the betterment of society out of goodwill by a law firm",
+        "The award recognizes initiatives taken by law firms to make a positive difference in the lives of others and contribute to the betterment of society out of goodwill by a law firm.",
     },
     {
       id: 2,
       name: "Civil Aviation",
       description:
-        "The award recognizes legal teams who have handled civil aviation transactions(airline operators and manufacturers only), including contract negotiations, mergers and acquisitions, licensing agreements, and other legal matters related to online business activities. The team will be recognized for introducing innovative legal solutions and strategies tailored which should demonstrate their clear understanding of the dynamic space. The application must clearly demonstrate the legal team's expertise in providing strategic guidance, fostering compliance, and ensuring the company's operations align with legal standards while enabling business growth",
+        "The award recognizes legal teams who have handled civil aviation transactions(airline operators and manufacturers only), including contract negotiations, mergers and acquisitions, licensing agreements, and other legal matters related to online business activities.",
     },
     {
       id: 3,
       name: "General Counsel of the Year",
       description:
-        "The award recognizes the achievements and dedication of a legal visionary who has redefined the role of General Counsel in an organization/ brand through their extensive experience and outstanding contributions. He/she should be consistent in demonstrating unwavering dedication, legal expertise, and strategic brilliance in his role as General Counsel. His/her meticulous due diligence, expert negotiations, and comprehensive risk assessments should have contributed to the successful integration of diverse entities, strengthening the organization's market position",
+        "The award recognizes the achievements and dedication of a legal visionary who has redefined the role of General Counsel in an organization/ brand through their extensive experience and outstanding contributions.",
     },
   ],
   locations: [
@@ -108,6 +112,12 @@ export const DATA = {
       description:
         "Patent attorneys are experts in preparing and filing patent applications and representing clients in court for patent-related matters such as infringement, licensing, and re-examination.t",
     },
+    {
+      id: 5,
+      name: "Legal Document Writer",
+      description:
+        "Document writers are professionals who prepare and write documents for registration. They can help clients communicate their ideas, products, or services in written form. Some document writers specialize in legal contracts, financial statements, business proposals, and marketing materials.",
+    },
   ],
   services: [
     {
@@ -115,12 +125,6 @@ export const DATA = {
       title: "Legal Consultancy",
       description:
         "Legal consultants are attorneys hired by law firms to assist with a particular case or legal matter. They are often experts in a specific field of law, such as real estate, business, or health care. This qualifies them to be a consultant for firms that may not have a lot of experience in a particular kind of law.",
-    },
-    {
-      id: 2,
-      title: "Affidavaits",
-      description:
-        "The term ‘affidavit’ stands for a sworn statement which is made in writing and necessarily under an oath or affirmation before an authorised officer or magistrate",
     },
     {
       id: 2,
@@ -160,12 +164,11 @@ export const DATA = {
   lsp: [
     {
       name: "Sunil Verma",
-      profilePhoto: "m",
+      profilePhoto: "men3.jpg",
       location: 1,
       title: "Advocate",
-      exeperience: 12 * 2, // in months
+      experience: 12 * 2, // in months
       education: 1,
-      awards: [{ id: 1, recivedOn: "18/03/2020", certificate: "" }],
       services: [{ id: 1, priceStart: 6500 }],
       specialization: [1],
       badges: [],
@@ -186,14 +189,13 @@ export const DATA = {
     },
     {
       name: "Gauri Saxena",
-      profilePhoto: "f",
+      profilePhoto: "girl.jpg",
       location: 3,
       title: "Advocate",
-      exeperience: 12 * 4, // in months
+      experience: 12 * 4, // in months
       education: 2,
-      awards: [{ id: 1, recivedOn: "08/11/2013", certificate: "" }],
       services: [{ id: 1, priceStart: 3500 }],
-      specialization: [1],
+      specialization: [3],
       badges: [],
       pastRecord: [
         {
@@ -212,23 +214,33 @@ export const DATA = {
     },
     {
       name: "Angad Kapoor",
-      profilePhoto: "m",
+      profilePhoto: "men5.jpg",
       location: 2,
-      title: "Retired Judge",
-      exeperience: 12 * 30, // in months
+      title: "Senior Advocate",
+      experience: 12 * 30, // in months
       education: 2,
-      awards: [{ id: 1, recivedOn: "20/05/2009", certificate: "" }],
-      services: [{ id: 1, priceStart: 12000 }],
-      specialization: [1],
-      badges: [2],
+      awards: [
+        { id: 1, recivedOn: "20/05/2001", certificate: "certificate.jpg" },
+        { id: 3, recivedOn: "20/05/2005", certificate: "certificate.jpg" },
+        { id: 1, recivedOn: "20/05/2011", certificate: "certificate.jpg" },
+        { id: 3, recivedOn: "20/05/2014", certificate: "certificate.jpg" },
+        { id: 3, recivedOn: "20/05/2021", certificate: "certificate.jpg" },
+        { id: 1, recivedOn: "20/05/2023", certificate: "certificate.jpg" },
+      ],
+      services: [
+        { id: 1, priceStart: 75000 },
+        { id: 4, priceStart: 49000 },
+      ],
+      specialization: [2, 4],
+      badges: [1],
       pastRecord: [
         {
           title: "R.K Jain vs Union Of India and Ors",
-          status: "FINISHED",
+          status: "ONGOING",
         },
         {
-          title: "Shri Ashok Tanwar&Anr vs State of H.P",
-          status: "FINISHED",
+          title: "Shri Ashok Tanwar & Anr vs State of H.P",
+          status: "ONGOING",
         },
         {
           title: "Secr. Min of H&W vs S.C Malte",
@@ -238,19 +250,29 @@ export const DATA = {
           title: "P.Ramakrishnam Rahu vs Union of India",
           status: "FINISHED",
         },
+        {
+          title: "Errie Construction pvt.ltd vs Harsh Ullas Nair",
+          status: "FINISHED",
+        },
+        {
+          title: "State vs Sonal Anand",
+          status: "DISMISSED",
+        },
       ],
     },
     {
       name: "Aditya Bansal",
-      profilePhoto: "m",
+      profilePhoto: "men2.jpg",
       location: 1,
-      title: "Senior Advocate",
-      exeperience: 12 * 12, // in months
+      title: "Retired Judge",
+      experience: 12 * 12, // in months
       education: 3,
-      awards: [{ id: 3, recivedOn: "20/05/2014", certificate: "" }],
+      awards: [
+        { id: 3, recivedOn: "20/05/2014", certificate: "certificate.jpg" },
+      ],
       services: [{ id: 1, priceStart: 7500 }],
-      specialization: [1],
-      badges: [1],
+      specialization: [2],
+      badges: [2],
       pastRecord: [
         {
           title: "State vs Adhiraj Sainani ",
@@ -260,14 +282,16 @@ export const DATA = {
     },
     {
       name: "Veer Singh",
-      profilePhoto: "m",
+      profilePhoto: "men4.jpg",
       location: 6,
       title: "Advocate",
-      exeperience: 12 * 3, // in months
+      experience: 12 * 3, // in months
       education: 3,
-      awards: [{ id: 3, recivedOn: "20/05/2014", certificate: "" }],
+      awards: [
+        { id: 1, recivedOn: "20/05/2014", certificate: "certificate.jpg" },
+      ],
       services: [{ id: 1, priceStart: 7500 }],
-      specialization: [1],
+      specialization: [3],
       badges: [],
       pastRecord: [
         {
@@ -280,20 +304,22 @@ export const DATA = {
         },
         {
           title: "Errie Construction pvt.ltd vs Harsh Ullas Nair",
-          status: "Ongoing",
+          status: "ONGOING",
         },
       ],
     },
     {
       name: "Faizal Shah",
-      profilePhoto: "m",
+      profilePhoto: "men.jpg",
       location: 1,
       title: "Document Writer",
-      exeperience: 12 * 2, // in months
+      experience: 12 * 2, // in months
       education: 4,
-      awards: [{ id: 3, recivedOn: "20/05/2014", certificate: "" }],
-      services: [{ id: 1, priceStart: 7500 }],
-      specialization: [1],
+      services: [
+        { id: 2, priceStart: 2300 },
+        { id: 3, priceStart: 2800 },
+      ],
+      specialization: [5],
       badges: [],
       pastRecord: [
         {
