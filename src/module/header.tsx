@@ -28,7 +28,7 @@ interface HeaderProps {
 export const Header: React.FC<HeaderProps> = ({ type }) => {
   if (type === "landing") {
     return (
-      <div className="w-[100vw] border-b">
+      <div className="w-[calc(100vw - 20px)] border-b">
         <Wrapper className={`py-4`}>
           <Logo />
         </Wrapper>

@@ -13,29 +13,35 @@ import {
 } from "./ui/command";
 import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
 import clsx from "clsx";
+import { DATA } from "../utils/constants";
 
-const colleges = [
-  {
-    value: "mumbai",
-    label: "Mumbai",
-  },
-  {
-    value: "delhi",
-    label: "Delhi",
-  },
-  {
-    value: "kanpur",
-    label: "Kanpur",
-  },
-  {
-    value: "srinagar",
-    label: "Srinagar",
-  },
-  {
-    value: "chennai",
-    label: "Chennai",
-  },
-];
+// const colleges = [
+//   {
+//     value: "mumbai",
+//     label: "Mumbai",
+//   },
+//   {
+//     value: "delhi",
+//     label: "Delhi",
+//   },
+//   {
+//     value: "kanpur",
+//     label: "Kanpur",
+//   },
+//   {
+//     value: "srinagar",
+//     label: "Srinagar",
+//   },
+//   {
+//     value: "chennai",
+//     label: "Chennai",
+//   },
+// ];
+
+const colleges = DATA.edu.map((edu) => ({
+  value: edu.name.toLowerCase().replaceAll(" ", "-"),
+  label: edu.name,
+}));
 
 export function CollegeCombobox() {
   const [open, setOpen] = React.useState(false);

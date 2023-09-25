@@ -60,12 +60,14 @@ export const ProFilters: React.FC<ProFiltersProps> = ({}) => {
             <hr />
           </div>
           <Collapsible>
-            <CollapsibleTrigger className={`flex gap-2 items-center`}>
+            <CollapsibleTrigger
+              className={`flex gap-2 items-center font-bold text-lg`}
+            >
               More Filters <ChevronDownIcon />
             </CollapsibleTrigger>
             <CollapsibleContent className={`mt-5 p-6 rounded-lg`}>
-              <div className={`flex justify-between items-center`}>
-                <div>
+              <div className={`flex justify-between items-start`}>
+                <div className={`flex-1`}>
                   <Label htmlFor="search">College</Label>
                   <div>
                     <CollegeCombobox />
@@ -77,31 +79,31 @@ export const ProFilters: React.FC<ProFiltersProps> = ({}) => {
                     type="number"
                     id="starting-price"
                     placeholder="₹500"
-                    className={`w-[310px]`}
+                    className={`w-[270px]`}
                   />
                 </div>
               </div>
 
-              <div className={`flex justify-between items-center mt-8`}>
+              <div className={`flex flex-1 justify-between items-center mt-8`}>
                 <div>
                   <Label htmlFor="yoe">Years of Experience</Label>
                   <Input
                     type="number"
                     id="yoe"
                     placeholder="3 Years"
-                    className={`w-[250px]`}
+                    className={`w-[260px]`}
                   />
                 </div>
 
                 <div className={`w-[320px]`}>
-                  <Label>Badges</Label>
+                  <p>Badges</p>
                   <div className={`flex items-center gap-2 mt-3`}>
                     <Switch />
-                    <Label>Advocate on Record</Label>
+                    <p>Advocate on Record</p>
                   </div>
                   <div className={`flex items-center gap-2 mt-3`}>
                     <Switch />
-                    <Label>Retired Judge</Label>
+                    <p>Retired Judge</p>
                   </div>
                 </div>
               </div>

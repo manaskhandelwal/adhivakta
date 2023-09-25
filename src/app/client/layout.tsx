@@ -10,10 +10,5 @@ export default function ClientLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <>
-      <Header type="client" />
-      {children}
-    </>
-  );
+  return <>{children}</>;
 }

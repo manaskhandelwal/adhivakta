@@ -21,7 +21,6 @@ import {
   InfoCircledIcon,
   SewingPinFilledIcon,
 } from "@radix-ui/react-icons";
-import { Label } from "../../../components/ui/label";
 import {
   Card,
   CardHeader,
@@ -154,7 +153,7 @@ export default function Profile() {
               {pro.title}
             </h6>
             <div className={`flex flex-col gap-2 mt-8 text-sm`}>
-              <Label className={`font-[800]`}>Specialization</Label>
+              <p className={`font-[800]`}>Specialization</p>
               <div className={`flex gap-2`}>
                 {specializations.map((sep, i) => {
                   return (
@@ -176,18 +175,16 @@ export default function Profile() {
             </div>
             <p className={`flex gap-1 items-center mt-10 text-sm`}>
               <SewingPinFilledIcon />
-              <Label className={`font-[800]`}>Location: </Label>
+              <p className={`font-[800]`}>Location: </p>
               {loc?.name}
             </p>
             <p className={`flex gap-1 items-center mt-4 text-sm`}>
               <CalendarIcon />
-              <Label className={`font-[800]`}>Years of Experience: </Label>
+              <p className={`font-[800]`}>Years of Experience: </p>
               {pro?.experience / 12} years
             </p>
             <div className={`mt-20`}>
-              <Label className={`font-[800] text-3xl`}>
-                Education background{" "}
-              </Label>
+              <p className={`font-[800] text-3xl`}>Education background </p>
               <Card className="bg-slate-200 mt-6">
                 <CardHeader>
                   <CardTitle
@@ -200,7 +197,7 @@ export default function Profile() {
                       <div className={`flex-1`}>
                         <p className={`leading-5`}>{edu?.description}</p>
                         <p className={`mt-4`}>
-                          <Label className={`font-[800]`}>Address: </Label>{" "}
+                          <p className={`font-[800]`}>Address: </p>{" "}
                           {edu?.address}
                         </p>
                       </div>
@@ -217,7 +214,7 @@ export default function Profile() {
               </Card>
             </div>
             <div className={`mt-20`}>
-              <Label className={`font-[800] text-3xl`}>Services</Label>
+              <p className={`font-[800] text-4xl`}>Services</p>
               <div className="mt-6">
                 {services.map((service, i) => {
                   return (
@@ -231,10 +228,8 @@ export default function Profile() {
                         <CardDescription>
                           <p className={`leading-5`}>{service?.description}</p>
                           <p className={`mt-4`}>
-                            <Label className={`font-[800]`}>
-                              Price Starts:{" "}
-                            </Label>{" "}
-                            ₹{service?.priceStart.toLocaleString()}
+                            <p className={`font-[800]`}>Price Starts: </p> ₹
+                            {service?.priceStart.toLocaleString()}
                           </p>
                         </CardDescription>
                       </CardHeader>
@@ -244,7 +239,7 @@ export default function Profile() {
               </div>
             </div>
             <div className={`mt-20`}>
-              <Label className={`font-[800] text-3xl`}>Case History</Label>
+              <p className={`font-[800] text-3xl`}>Case History</p>
               <Table className={`mt-6`}>
                 <TableHeader>
                   <TableRow>
@@ -280,7 +275,7 @@ export default function Profile() {
               </Table>
             </div>
             <div className={`flex flex-col gap-2 mt-20 text-sm`}>
-              <Label className={`font-[800] text-3xl`}>Awards</Label>
+              <p className={`font-[800] text-3xl`}>Awards</p>
               <div className="mt-6 grid grid-cols-2 gap-6">
                 {awards.reverse().map((awd, i) => {
                   return (
@@ -317,9 +312,7 @@ export default function Profile() {
                             <div className={`flex-1`}>
                               {/* <p className={`leading-5`}>{awd?.description}</p> */}
                               <p>
-                                <Label className={`font-[800]`}>
-                                  Recived On:{" "}
-                                </Label>{" "}
+                                <p className={`font-[800]`}>Recived On: </p>{" "}
                                 {awd?.recivedOn}
                               </p>
                             </div>

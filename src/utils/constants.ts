@@ -172,6 +172,7 @@ export const DATA = {
       services: [{ id: 1, priceStart: 6500 }],
       specialization: [1],
       badges: [],
+      awards: [],
       pastRecord: [
         {
           title: "Ramesh Chandra vs Anna Mathew",
@@ -197,6 +198,7 @@ export const DATA = {
       services: [{ id: 1, priceStart: 3500 }],
       specialization: [3],
       badges: [],
+      awards: [],
       pastRecord: [
         {
           title: "Shaina Khanna vs Pratik Bhose",
@@ -293,6 +295,7 @@ export const DATA = {
       services: [{ id: 1, priceStart: 7500 }],
       specialization: [3],
       badges: [],
+
       pastRecord: [
         {
           title: "State vs Vaibhav singh",
@@ -309,7 +312,7 @@ export const DATA = {
       ],
     },
     {
-      name: "Faizal Shah",
+      name: "Faizal Khan",
       profilePhoto: "men.jpg",
       location: 1,
       title: "Document Writer",
@@ -321,6 +324,7 @@ export const DATA = {
       ],
       specialization: [5],
       badges: [],
+      awards: [],
       pastRecord: [
         {
           title: "Ahuja Family Inheritance",

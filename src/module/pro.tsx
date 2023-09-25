@@ -21,9 +21,11 @@ interface ProProps {}
 export const Pro: React.FC<ProProps> = ({}) => {
   return (
     <Wrapper className={`mb-32`}>
-      <h1 className={`text-4xl mb-8`}>Legal Service Providers</h1>
+      <h1 className={`text-4xl my-16 font-extrabold`}>
+        Legal Service Providers
+      </h1>
 
-      <div className={`grid grid-cols-4 gap-8`}>
+      <div className={`grid grid-cols-3 gap-8`}>
         {DATA.lsp.map((pro, i) => {
           return (
             <Link
@@ -38,29 +40,31 @@ export const Pro: React.FC<ProProps> = ({}) => {
                       <AvatarFallback>TP</AvatarFallback>
                     </Avatar>
                   </div>
-                  <CardTitle className={`text-2xl font-extrabold leading-9`}>
+                  <CardTitle
+                    className={`text-2xl font-extrabold leading-9 flex justify-center gap-2 align-middle`}
+                  >
                     {pro.name}
+                    <span className={`text-lg`}>
+                      {pro.badges.map((j) => {
+                        const badge = DATA.badges.find((i) => i.id === j);
+                        return (
+                          <TooltipProvider key={j}>
+                            <Tooltip>
+                              <TooltipTrigger>
+                                {j === 1 ? "✳️" : "❇️"}
+                              </TooltipTrigger>
+                              <TooltipContent>
+                                <p>{badge?.title}</p>
+                              </TooltipContent>
+                            </Tooltip>
+                          </TooltipProvider>
+                        );
+                      })}
+                    </span>
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <h5 className={`text-slate-500`}>{pro.title}</h5>
-                  <div>
-                    {pro.badges.map((j) => {
-                      const badge = DATA.badges.find((i) => i.id === j);
-                      return (
-                        <TooltipProvider>
-                          <Tooltip>
-                            <TooltipTrigger>
-                              {j === 1 ? "✳️" : "❇️"}
-                            </TooltipTrigger>
-                            <TooltipContent>
-                              <p>{badge?.title}</p>
-                            </TooltipContent>
-                          </Tooltip>
-                        </TooltipProvider>
-                      );
-                    })}
-                  </div>
                 </CardContent>
               </Card>
             </Link>

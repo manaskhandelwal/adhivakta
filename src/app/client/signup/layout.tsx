@@ -12,7 +12,7 @@ export default function ClientSignUpLayout({
 }) {
   return (
     <>
-      {/* <Header type="landing" /> */}
+      <Header type="landing" />
       {children}
     </>
   );
